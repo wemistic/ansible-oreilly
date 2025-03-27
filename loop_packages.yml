@@ -1,0 +1,21 @@
+---
+- name: install & uninstall multiple packages using loops
+  hosts: all
+  become: true
+  gather_facts: yes
+  tasks:
+    - name: uninstall packages
+      yum:
+        name: '{{ item.pkg }}'
+        state: '{{ item.setup }}'
+      loop:
+        - pkg: git
+          setup: installed
+        - pkg: make
+          setup: latest
+        - pkg: wget
+          setup: installed
+        - pkg: tree
+          setup: installed
+        - pkg: telnet
+          setup: absent

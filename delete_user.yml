@@ -1,0 +1,11 @@
+---
+- name: Remove user
+  hosts: all
+  become: true
+  gather_facts: no
+  tasks: 
+    - name: Remove user john
+      user: 
+        name: john
+        state: absent
+
