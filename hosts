@@ -3,3 +3,6 @@
 
 [manage-node2]
 192.168.1.246
+
+[controlnode]
+192.168.1.245

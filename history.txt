@@ -24,3 +24,152 @@
    24  git pull origin  master
    25  git status
    26  history > history.txt 
+    1  sudo vi /etc/hostname 
+    2  sudo -i
+    3  exit
+    4  sudo /etc/hostname
+    5  sudo vi /etc/hostname
+    6  init 6
+    7  sudo init 6
+    8  ll
+    9  cd playbooks/
+   10  ll
+   11  vi tomcat_vars.yml
+   12  vi tomcat_setup.yml 
+   13  vi tomcat_vars.yml
+   14  ansible-playbook -i hosts tomcat_setup.yml --check
+   15  vi tomcat_setup.yml 
+   16  ansible-playbook -i hosts tomcat_setup.yml --check
+   17  vi tomcat_setup.yml 
+   18  ansible-playbook -i hosts tomcat_setup.yml --check
+   19  ansible-playbook -i hosts tomcat_setup.yml
+   20  ll
+   21  git status
+   22  git pull
+   23  git pull remote master
+   24  git pull origin  master
+   25  git status
+   26  history > history.txt 
+   27  git status
+   28  git add .
+   29  git status
+   30  git commit -m "ansible-playbooks"
+   31  git push
+   32  git push --set-upstream origin master
+   33  ll
+   34  cat history.txt 
+   35  history
+   36  cat history.txt 
+   37  ll
+   38  history
+   39  history.txt
+   40  cat history.txt
+   41  git logs
+   42  git log
+   43  git show 02afca1fb5
+   44  ansible-vault create vault1.yml
+   45  cat vault1.yml 
+   46  ansible-vault view vault1.yml
+   47  ll
+   48  vi user.txt 
+   49  ansible-vault encrypt user.txt 
+   50  cat user.txt 
+   51  ansible-vault view user.txt 
+   52  ansible-vault edit user.txt 
+   53  cat user.txt 
+   54  ansible-vault view user.txt 
+   55  ansible-vault decrypt user.txt 
+   56  cat user.txt 
+   57  history
+   58  history >> history.txt 
+    1  sudo vi /etc/hostname 
+    2  sudo -i
+    3  exit
+    4  sudo /etc/hostname
+    5  sudo vi /etc/hostname
+    6  init 6
+    7  sudo init 6
+    8  ll
+    9  cd playbooks/
+   10  ll
+   11  vi tomcat_vars.yml
+   12  vi tomcat_setup.yml 
+   13  vi tomcat_vars.yml
+   14  ansible-playbook -i hosts tomcat_setup.yml --check
+   15  vi tomcat_setup.yml 
+   16  ansible-playbook -i hosts tomcat_setup.yml --check
+   17  vi tomcat_setup.yml 
+   18  ansible-playbook -i hosts tomcat_setup.yml --check
+   19  ansible-playbook -i hosts tomcat_setup.yml
+   20  ll
+   21  git status
+   22  git pull
+   23  git pull remote master
+   24  git pull origin  master
+   25  git status
+   26  history > history.txt 
+   27  git status
+   28  git add .
+   29  git status
+   30  git commit -m "ansible-playbooks"
+   31  git push
+   32  git push --set-upstream origin master
+   33  ll
+   34  cat history.txt 
+   35  history
+   36  cat history.txt 
+   37  ll
+   38  history
+   39  history.txt
+   40  cat history.txt
+   41  git logs
+   42  git log
+   43  git show 02afca1fb5
+   44  ansible-vault create vault1.yml
+   45  cat vault1.yml 
+   46  ansible-vault view vault1.yml
+   47  ll
+   48  vi user.txt 
+   49  ansible-vault encrypt user.txt 
+   50  cat user.txt 
+   51  ansible-vault view user.txt 
+   52  ansible-vault edit user.txt 
+   53  cat user.txt 
+   54  ansible-vault view user.txt 
+   55  ansible-vault decrypt user.txt 
+   56  cat user.txt 
+   57  history
+   58  history >> history.txt 
+   59  cat history.txt 
+   60  git clone https://github.com/wemistic/ansible-vault-test.git
+   61  vi hosts 
+   62  vi clone.yml
+   63  pwd
+   64  cat clone.yml 
+   65  mv clone.yml git_clone.yml
+   66  cat git_clone.yml 
+   67  cat hosts 
+   68  ansible-playbook -i hosts git_clone.yml --limit controlnode --check
+   69  vi git_clone.yml 
+   70  ansible-playbook -i hosts git_clone.yml --limit controlnode --check
+   71  ansible-playbook -i hosts git_clone.yml --check
+   72  vi git_clone.yml 
+   73  ansible-playbook -i hosts git_clone.yml --check
+   74  vi hosts 
+   75  ansible-playbook -i hosts git_clone.yml --check
+   76  vi git_clone.yml 
+   77  ansible-playbook -i hosts git_clone.yml --check
+   78  vi git_clone.yml 
+   79  ansible-playbook -i hosts git_clone.yml --check
+   80  vi git_clone.yml 
+   81  ansible-playbook -i hosts git_clone.yml --check
+   82  vi git_clone.yml 
+   83  ansible-playbook -i hosts git_clone.yml --check
+   84  vi git_clone.yml 
+   85  ansible-playbook -i hosts git_clone.yml --check
+   86  vi git_clone.yml 
+   87  ansible-playbook -i hosts git_clone.yml --check
+   88  vi hosts 
+   89  vi git_clone.yml 
+   90  ansible-playbook -i hosts git_clone.yml --check
+   91  history >> history.txt 

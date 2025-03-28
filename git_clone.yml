@@ -1,0 +1,11 @@
+---
+- name: cloning private repo
+  hosts: controlnode
+  gather_facts: no
+
+  tasks:
+    - name: Git checkout
+      git:
+        repo: "git@github.com/wemistic/ansible-vault-test.git"
+        clone: true
+        dest: "/home/ansadmin/vault-test"
