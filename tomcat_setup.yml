@@ -1,0 +1,46 @@
+---
+- name: playbook to install apache tomcat
+  hosts: all
+  become: true
+  gather_facts: yes
+  vars_files:
+    - tomcat_vars.yml
+
+  tasks:
+  - name: install java-1.8*
+    yum:
+      name: java
+      state: installed
+
+  - name: downloading tomcat packages
+    get_url:
+       url: "{{ tomcat_url }}"
+       dest: /opt
+       mode: 0755
+
+
+  - name: extract packages
+    unarchive:
+       src: /opt/{{ tomcat_package }}.tar.gz
+       dest: /opt
+       remote_src: yes
+
+  - name: change permissions on apache-tomcat file
+    file:
+      path: /opt/{{ tomcat_package }}
+      mode: 0755
+      recurse: yes
+
+  - name: creating link file for tomcat startup.sh file
+    file:
+      src: /opt/{{ tomcat_package }}/bin/{{ item.tomcat_script }}
+      dest: /usr/local/bin/{{ item.tomcat_cmd }}
+      state: link
+    loop:
+      - { tomcat_script: startup.sh, tomcat_cmd: tomcatup }
+      - { tomcat_script: shutdown.sh, tomcat_cmd: tomcatdown }
+           
+  - name: start the services
+    command: nohup ./startup.sh
+    args:  
+      chdir: /opt/{{ tomcat_package }}/bin

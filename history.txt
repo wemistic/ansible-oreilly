@@ -1,0 +1,26 @@
+    1  sudo vi /etc/hostname 
+    2  sudo -i
+    3  exit
+    4  sudo /etc/hostname
+    5  sudo vi /etc/hostname
+    6  init 6
+    7  sudo init 6
+    8  ll
+    9  cd playbooks/
+   10  ll
+   11  vi tomcat_vars.yml
+   12  vi tomcat_setup.yml 
+   13  vi tomcat_vars.yml
+   14  ansible-playbook -i hosts tomcat_setup.yml --check
+   15  vi tomcat_setup.yml 
+   16  ansible-playbook -i hosts tomcat_setup.yml --check
+   17  vi tomcat_setup.yml 
+   18  ansible-playbook -i hosts tomcat_setup.yml --check
+   19  ansible-playbook -i hosts tomcat_setup.yml
+   20  ll
+   21  git status
+   22  git pull
+   23  git pull remote master
+   24  git pull origin  master
+   25  git status
+   26  history > history.txt 

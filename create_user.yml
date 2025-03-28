@@ -1,10 +1,23 @@
 ---
-- name: Creating user
+- name: creating user
   hosts: all
   gather_facts: no
   become: true
+    #  vars:
+    # user_name: modi
+  vars_files:
+      - /home/ansadmin/playbooks/user.txt
+    
   tasks:
-  - name: Creating user sonia  
+  - name: creating user {{ user_name }}  
     user: 
-      name: sonia
+      name: "{{ user_name }}"
+
+  - name: create a directory
+    file:
+      path: /opt/{{ user_name }}_temp_dir
+      state: directory
+      owner: "{{ user_name }}"
+      group: "{{ user_name }}"
+      mode: 0755    
 
